@@ -1,17 +1,39 @@
 var canvas = document.getElementById('canvas');
-  if (canvas.getContext) {
-    
-    var ctx = canvas.getContext('2d');
+var ctx = canvas.getContext('2d');
+var coord = {
+              iniX: 100,
+              iniY: 100,
+              finX: 100,
+              finY: 500
+            }
 
-    ctx.fillRect(100,100,100,400);
-    ctx.fillRect(200,300,200,50);
-    //ctx.clearRect(45,45,60,60);
-    //ctx.strokeRect(50,50,50,50);
+setInterval(function(){ dibujar(); }, 1000);
 
-    //ctx.beginPath();
-    //ctx.moveTo(100,100);
-    //ctx.lineTo(150,100);
-   //ctx.lineTo(25,105);
-    //ctx.fill();
+function dibujar () {
 
-  }
+  coord.iniX += 25;
+  coord.iniY -= 25;
+  coord.finX -= 25; 
+  coord.finY -= 25;
+  console.log(coord);
+
+  canvas.width = canvas.width; //clear 
+
+  /*ctx.moveTo(100, 100);
+  ctx.lineTo(100, 500);
+  ctx.lineWidth = 100;
+  ctx.stroke();*/
+
+  /*ctx.moveTo(300, 300);
+  ctx.lineTo(500, 300 + coord.x);
+  ctx.moveTo(300, 300);
+  ctx.lineTo(100, 300 - coord.x);
+  ctx.lineWidth = 100;
+  ctx.stroke();*/
+
+  ctx.moveTo(coord.iniX, coord.iniY);
+  ctx.lineTo(coord.finX, coord.finY);
+  ctx.lineWidth = 100;
+  ctx.stroke();
+
+}
