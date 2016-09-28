@@ -7,19 +7,37 @@
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 	<style type="text/css" media="screen">
+
 		figcaption{ text-align: center;border-top: 1px #ccc solid;}
 		#imagen {width: 90%; margin: 0 5%;}
 		body {background-color: #f2f2f2;}
 		video {max-width: 90%; margin: 0 5%;}
-		#controles {
+		#controlesV {
 			margin: 0 5%;
+			float: left;
+			width: 100%;
 		}
-		#btnPlay {
+		#btnPlayV {
+			color: rgb(60, 110, 234);
+			float: left;
+		}
+		#btnMuteV {
+			color: rgb(60, 110, 234);
+			float: left;
+		}
+		#timeStampV {
+			float: left;
+			margin: 0 5%;
+			width: 10%;
 			color: rgb(60, 110, 234);
 		}
-		#btnMute {
+		#timeTotalV {
+			margin: 0 5%;
+			width: 10%;
+			float: right;
 			color: rgb(60, 110, 234);
 		}
+
 	</style>
 </head>
 <body>
@@ -121,14 +139,16 @@
 		<section>
 			<h2>Vídeo en la Web</h2>
 			<article>
-				<video id="reproductor">
+				<video id="reproductorV">
 					<source src="videos/CrearServidorUno.webm" type='video/webm; codecs="vp8, vorbis"'>
 					<source src="videos/CrearServidorUno.ogg" type='video/ogg; codecs="theora, vorbis"'>
-					<source src="videos/CrearServidorUno.mp4" type='video/mp4; codecs="avc1.64001E, mp4a.40.2"'>
+					<source src="videos/video.mp4" type='video/mp4; codecs="avc1.64001E, mp4a.40.2"'>
 				</video>
-				<div id="controles">
-					<i id="btnPlay" class="material-icons">play_arrow</i>
-					<i id="btnMute" class="material-icons">volume_up</i>
+				<div id="controlesV">
+					<i id="btnPlayV" class="material-icons">play_arrow</i>
+					<i id="btnMuteV" class="material-icons">volume_up</i>
+					<div id="timeStampV"></div>
+					<div id="timeTotalV"></div>
 				</div>
 				<a href="videos/CrearServidorUno.webm" download="">Descargar en webM</a>
 				<a href="videos/CrearServidorUno.ogg" download="">Descargar en ogg</a>
@@ -138,7 +158,11 @@
 		<hr/>
 		<section>
 			<h2>Sonido en la Web</h2>
-			<article></article>
+			<article>
+				<audio controls>
+					<source src="audio/audio.mp3" type="audio/mpeg">
+				</audio>
+			</article>
 		</section>
 	</main>
 	<footer>
