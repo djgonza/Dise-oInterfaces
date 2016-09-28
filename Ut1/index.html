@@ -4,10 +4,22 @@
 	<title>Ut1 Licencias</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="icon" href="img/Favicon.ico" sizes="32x32" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 	<style type="text/css" media="screen">
 		figcaption{ text-align: center;border-top: 1px #ccc solid;}
 		#imagen {width: 90%; margin: 0 5%;}
 		body {background-color: #f2f2f2;}
+		video {max-width: 90%; margin: 0 5%;}
+		#controles {
+			margin: 0 5%;
+		}
+		#btnPlay {
+			color: rgb(60, 110, 234);
+		}
+		#btnMute {
+			color: rgb(60, 110, 234);
+		}
 	</style>
 </head>
 <body>
@@ -108,7 +120,20 @@
 		<hr/>
 		<section>
 			<h2>Vídeo en la Web</h2>
-			<article></article>
+			<article>
+				<video id="reproductor">
+					<source src="videos/CrearServidorUno.webm" type='video/webm; codecs="vp8, vorbis"'>
+					<source src="videos/CrearServidorUno.ogg" type='video/ogg; codecs="theora, vorbis"'>
+					<source src="videos/CrearServidorUno.mp4" type='video/mp4; codecs="avc1.64001E, mp4a.40.2"'>
+				</video>
+				<div id="controles">
+					<i id="btnPlay" class="material-icons">play_arrow</i>
+					<i id="btnMute" class="material-icons">volume_up</i>
+				</div>
+				<a href="videos/CrearServidorUno.webm" download="">Descargar en webM</a>
+				<a href="videos/CrearServidorUno.ogg" download="">Descargar en ogg</a>
+				<a href="videos/CrearServidorUno.mp4" download="">Descargar en mp4</a>
+			</article>
 		</section>
 		<hr/>
 		<section>
@@ -124,3 +149,7 @@
 </body>
 </html>
 <script src="js/logoCanvasDavid.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="js/reproductor.js" type="text/javascript" charset="utf-8" async defer></script>
+
+
+
