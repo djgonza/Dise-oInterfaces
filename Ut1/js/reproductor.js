@@ -1,4 +1,3 @@
-
 var reproductor = document.getElementById("reproductorV");
 var btnPlay = document.getElementById("btnPlayV");
 var btnMute = document.getElementById("btnMuteV");
@@ -9,6 +8,8 @@ var time;
 btnPlay.onclick = playPause;
 
 btnMute.onclick = function () {
+
+	console.log("Muted");
 
 	reproductor.muted = !reproductor.muted;
 
@@ -22,6 +23,8 @@ btnMute.onclick = function () {
 }
 
 function playPause () {
+
+	console.log("Play");
 
 	if (reproductor.played.length == 0) {
 
@@ -54,8 +57,4 @@ function playPause () {
 		}
 	}	
 
-}
-
-function playTime () {
-	
 }

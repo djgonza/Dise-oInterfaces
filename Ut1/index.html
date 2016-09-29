@@ -46,7 +46,7 @@
 		<canvas id="canvas" height="300" width="300"></canvas>
 		<button id="change">Change</button>
 		<h1>UT1 David Jimenez</h1>
-	</header><!-- /header -->
+	</header>
 	<main>
 		<section>
 			<h2>Licencias</h2>
@@ -122,7 +122,6 @@
 				<h3>¿Qué diferencia hay entre png-8 y png-24?</h3>
 				<p>La cantidad de colores. Png 8 tiene 8 bits de colores y Png 24, 24.</p>
 			</article>
-			<!-- David -->
 			<figure>
 				<picture>
 					<source srcset="img/desktop.jpg" media="(min-width: 1024px)">
@@ -139,10 +138,19 @@
 		<section>
 			<h2>Vídeo en la Web</h2>
 			<article>
-				<video id="reproductorV">
-					<source src="videos/CrearServidorUno.webm" type='video/webm; codecs="vp8, vorbis"'>
-					<source src="videos/CrearServidorUno.ogg" type='video/ogg; codecs="theora, vorbis"'>
+				<h3>¿Se pueden servir vídeos diferentes según sea el tipo de dispositivo que los descargue?</h3>
+				<p>Si, con javascript podemos saber que dispositivo es y servir el contenido en consecuencia.</p>
+				<ul>
+					<h3>Enlaces Interesantes</h3>
+					<li><a href="http://www.w3schools.com/html/html5_video.asp">W3S</a></li>
+					<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video"></a>MDN</li>
+					<li><a href="https://www.html5rocks.com/es/tutorials/video/basics/">HTML5 Rock</a></li>
+				</ul>
+				<video id="reproductorV" controls>
 					<source src="videos/video.mp4" type='video/mp4; codecs="avc1.64001E, mp4a.40.2"'>
+					<source src="videos/video.webm" type='video/webm; codecs="vp8, vorbis"'>
+					<source src="videos/video.ogg" type='video/ogg; codecs="theora, vorbis"'>
+					<track label="Español" kind="subtitles" srclang="es" src="sub/es.vtt" default>
 				</video>
 				<div id="controlesV">
 					<i id="btnPlayV" class="material-icons">play_arrow</i>
@@ -150,15 +158,17 @@
 					<div id="timeStampV"></div>
 					<div id="timeTotalV"></div>
 				</div>
-				<a href="videos/CrearServidorUno.webm" download="">Descargar en webM</a>
-				<a href="videos/CrearServidorUno.ogg" download="">Descargar en ogg</a>
-				<a href="videos/CrearServidorUno.mp4" download="">Descargar en mp4</a>
+				<a href="videos/video.webm" download="Video">Descargar en webM</a>
+				<a href="videos/video.ogg" download="Video">Descargar en ogg</a>
+				<a href="videos/video.mp4" download="Video">Descargar en mp4</a>
 			</article>
 		</section>
 		<hr/>
 		<section>
 			<h2>Sonido en la Web</h2>
 			<article>
+				<h3>¿Qué tipos de audios se ponen en la web?</h3>
+				<p>Mp3, ogg, wab</p>
 				<audio controls>
 					<source src="audio/audio.mp3" type="audio/mpeg">
 				</audio>
@@ -167,7 +177,7 @@
 	</main>
 	<footer>
 		<p>Ut1 - Grupo Dos -David Jimenez Gonzalez, Gorka Ayerbe, Eduardo Pagola</p>
-		<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">licencia de Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional</a>.
+		<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Este obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">licencia de Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional</a>
 	</footer>
 
 </body>
