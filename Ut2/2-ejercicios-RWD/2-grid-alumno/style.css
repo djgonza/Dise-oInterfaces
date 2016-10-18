@@ -1,0 +1,61 @@
+body {
+	font-size: 10px;
+}
+
+.row {
+	border: 1em solid black;
+	overflow: hidden;
+	margin-bottom: 1em;
+	box-sizing: border-box;
+}
+
+.element {
+	border: 1em solid green;
+	width: 95%;
+	margin: 1em auto;
+	box-sizing: border-box;
+}
+
+.image {
+	border: 1em solid blue;
+	text-align: center;
+	padding: 1em;
+	margin: 1em;
+	box-sizing: border-box;
+}
+
+.text {
+	border: 1em solid red;
+	text-align: center;
+	padding: 1em;
+	margin: 1em;
+	box-sizing: border-box;
+}
+
+@media all and (min-width: 768px) {
+	
+	.element {
+		width: 45%;
+		margin: 0.75em;
+		float: left;
+	}
+
+}
+
+@media all and (min-width: 992px) {
+	
+	.element {
+		width: 29%;
+		margin: 1em;
+	}
+
+}
+
+@media all and (min-width: 1200px) {
+	
+	.element {
+		width: 14%;
+		margin: 1em 0em 1em 1em;
+	}
+
+}
