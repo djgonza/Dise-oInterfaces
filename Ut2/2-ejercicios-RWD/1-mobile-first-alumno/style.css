@@ -31,6 +31,7 @@ aside {
 	article {
 		float: left;
 		width: 70%;
+		background-image: url("img/content-is-like-water-3.jpg");
 	}
 	aside {
 		float: right;
@@ -43,6 +44,10 @@ aside {
 	
 	body {
 		max-width: 1000px;
+	}
+
+	article {
+		background-image: url("img/content-is-like-water-5.jpg");
 	}
 
 }

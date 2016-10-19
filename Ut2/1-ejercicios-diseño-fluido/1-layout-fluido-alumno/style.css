@@ -1,0 +1,19 @@
+body {
+	max-width: 1024px;
+	margin: 0 auto;
+	font-size: 4em;
+}
+
+article {
+	background-color: blue;
+    width: 65%;
+    padding: 5%;
+    float: left;
+}
+
+aside {
+	background-color: red;
+    width: 15%;
+    padding: 5%;
+    float: right;
+}

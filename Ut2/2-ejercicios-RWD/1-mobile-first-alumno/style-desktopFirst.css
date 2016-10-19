@@ -1,0 +1,48 @@
+
+body {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+nav {
+	width: 96%;
+	padding: 2%;
+	background-color: green;
+}
+
+article {
+	width: 70%;
+	background-color: blue;
+	height: 500px;
+	background-image: url("img/content-is-like-water-5.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	float: left;
+}
+
+aside {
+	background-color: red;
+	width: 26%;
+	float: right;
+	padding: 2%;
+}
+
+@media all and (max-width: 1000px) {
+	article {
+		background-image: url("img/content-is-like-water-3.jpg");
+	}
+}
+
+@media all and (max-width: 600px) {
+	article {
+		background-image: url("img/content-is-like-water-1.jpg");
+		float: none;
+		width: 100%;
+	}
+	aside {
+		width: 96%;
+	}
+
+}
+
