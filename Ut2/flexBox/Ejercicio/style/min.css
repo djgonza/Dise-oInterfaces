@@ -1,0 +1,5 @@
+body {
+  width: calc(100% - 25px);
+  height: 80%;
+  border-left: 80%;
+}

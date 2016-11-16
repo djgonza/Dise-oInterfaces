@@ -1,0 +1,136 @@
+body{
+	font-family: calibri;
+	width: 100%;
+	background-color: #ccffff;
+	padding: 1em;
+	border-sizing: border-box;
+}
+header{
+	background-color: black;
+	padding: 1em 0em 1em;
+}
+h1{
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 3em;
+	padding: 1.5em;
+}
+h2{
+
+	background-color: pink;
+}
+
+h1~h6{
+	font-weigth: bold;
+}
+nav{
+	background-color: #0BDE96;
+	text-align: center;
+	margin-top: 0.2em;
+	padding: 0.5em;
+}
+ul li a{
+	text-decoration: none;
+}
+
+a:hover{
+	color: #ED24C5;
+}
+a:active
+{
+
+	color:#F4ED2D;
+}
+a:link
+{
+
+	color:r #F5452E;
+}
+a:visited {
+	color: #24AE9C;
+}
+li{
+	border: 0.2em white solid;
+	padding: 0.4em;
+}
+
+p{
+	margin-bottom: 0.5em;
+	text-indent: 1em;
+	line-height: 1.2em;
+}
+article
+{	border:0.2em red solid;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 0.5em;
+
+}
+article h2
+{
+	margin: 0em 1em 0em  1em;
+}
+section
+{
+
+	margin: 1em;
+	background-color:  #A39191;
+	padding: 0.25em 0.5em 0.25em 0.5em;
+
+}
+section:nth-child(2) h3{
+
+	color: red;
+}
+section:nth-child(1) p{
+
+	text-align: justify;
+}
+section:nth-child(2) p::first-letter
+{
+	font-size: 2em;
+
+}
+
+section:nth-child(3) p:nth-child(3)::first-line
+{
+	color:blue;
+	
+}
+section:nth-child(3) p:nth-child(3)
+{
+
+	text-indent: -1.875em;
+	padding-left: 2.1em;
+}
+
+@media(min-width: 500px) {
+	li:nth-child(2n+1) { 
+		background-color: blue;
+
+	}
+	li:nth-child(2n) {
+
+		background-color: red;
+	}
+}
+@media(min-width: 600px) {
+	li:nth-child(2n+1) { 
+		background-color: red;
+
+	}
+	li:nth-child(2n) {
+
+		background-color: blue;
+	}
+	li:first-child {
+
+		border-top: 0.2em blue solid;
+	}
+	li:last-child {
+
+		border-bottom: 0.2em blue solid;
+	}
+}

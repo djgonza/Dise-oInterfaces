@@ -1,0 +1,55 @@
+a[href^="#"] {
+	background-color: red;
+}
+
+a[href*="arkaitzgarro"] {
+	background-color: green;
+}
+
+a[href$=".es"] {
+	background-color: blue;
+}
+
+abbr[title^="Diseño"] {
+	background-color: pink;
+}
+
+h1+h2 {
+	text-decoration: underline;
+}
+
+h2+h3 {
+	border-bottom: 0.2em red dotted; 
+}
+
+h2~h3 {
+	border-top: 0.2em green solid;
+}
+
+nav:nth-child(3) ul li {
+	display: inline-block;
+	text-decoration: underline;
+}
+
+nav:nth-child(3) ul li:last-child {
+	text-decoration: none;
+}
+
+nav:nth-child(3) ul li a:link {
+	text-decoration: none;
+}
+
+nav:nth-child(3) ul li a:visited {
+	text-decoration: none;
+}
+
+nav:nth-child(3) ul li a:active {
+	text-decoration: none;
+}
+
+nav:nth-child(3) ul li a:after {content: "|"}
+nav:nth-child(3) ul li:last-child a:after{content: ""}
+
+*::selection {
+	background-color: yellow;
+}

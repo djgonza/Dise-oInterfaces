@@ -1,0 +1,10 @@
+@hola: 25px;
+
+
+body {
+	width: ~"calc(100% - @{hola})";
+	height: @ancho;
+	@ancho: 80%;
+	border-left: @ancho;
+
+}
