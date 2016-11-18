@@ -145,32 +145,10 @@ article {
 @media all and (min-width: 768px) {
   article {
     float: left;
-    width: 49%;
+    width: 50%;
   }
   article:nth-child(even) {
-    margin-left: 0.5em;
-  }
-  /*article:nth-child(2n) {
-		clear: both;
-	}*/
-}
-@media all and (min-width: 1024px) {
-  article {
-    width: 32%;
-  }
-  article:nth-child(3n) {
-    margin-left: 0.5em;
-  }
-  article:nth-child(4n) {
-    clear: both;
-  }
-}
-@media all and (min-width: 1200px) {
-  article {
-    width: 24%;
-  }
-  article:nth-child(4n) {
-    clear: none;
+    float: right;
   }
 }
 h1 {
