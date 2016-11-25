@@ -1,0 +1,95 @@
+hgroup {
+	background-color: pink;
+	height: 3em;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+article {
+	background-color: #ccc;
+	position: relative;
+    padding-bottom: 3em;
+    padding: 1em;
+}
+
+p {
+	background-color: blue;
+	margin-bottom: 0.3em;
+}
+
+.container {
+	border: 1px solid black;
+	padding: 2em;
+}
+
+figure {
+	width: 50%;
+    margin: 0 25%;
+}
+
+img {
+	max-width: 100%;
+}
+
+figcaption {
+	background-color: white;
+	padding: 0.5em;
+    text-align: center;
+}
+
+p:nth-child(4)::first-letter {
+	font-size: 3em;
+}
+
+@media all and (min-width: 600px) {
+	hgroup {
+		position: relative;
+	}
+	article {
+		padding: 1em;
+	}
+	figure {
+		width: 25%;
+    	float: left;
+    	margin: 0;
+	}
+
+	p:nth-child(4), p:nth-child(5) {
+		clear: both;
+	}
+}
+
+@media all and (min-width: 1000px) {
+	hgroup {
+		margin: 2.5%;
+		width: 50%;
+		float: left;
+	}
+	article {
+		overflow: auto;
+		float: left;
+    	max-width: 33.333333333%;
+    	padding: 0;
+	}
+	p:nth-child(3) {
+		clear: both;
+		margin-top: 5em;
+	}
+	figure {
+		float: right;
+		margin-bottom: 5em;
+	}
+	.container {
+		overflow: hidden;
+	}
+
+	p {
+		margin-right: 3%;
+		margin-left: 3%;
+	}
+	
+}
