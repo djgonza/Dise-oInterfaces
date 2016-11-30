@@ -63,7 +63,7 @@ img:nth-of-type(2n)   { float: left;  }
 :not(#especial) { ... }  /* selecciona cualquier elemento cuyo atributo id no sea "especial" */
 
 width: calc(100% - 100px); /* Funcion calc() */
-box-sizing: border-box /* Especificar que elementos <div> deben tener el relleno y el borde incluidos en el total anchura y la altura del elemento */
+box-sizing: border-box; /* Especificar que elementos <div> deben tener el relleno y el borde incluidos en el total anchura y la altura del elemento */
 
 element {
     text-transform: uppercase; /* Mayusculas */

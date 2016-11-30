@@ -1,0 +1,176 @@
+/* David Jimenez Gonzalez */
+
+main {
+	background-color: brown;
+	padding: 1em;
+}
+header,
+footer {
+	background-color: pink;
+}
+
+footer {
+	border: 1px solid brown;
+    text-align: center;
+    padding: 1em;
+}
+figure {
+	margin: 0;
+}
+img {
+	width: 100%;
+}
+header {
+	position: relative;
+	padding: 4em 0 1em 0;
+}
+
+/* No funciona, 
+article:first-child, article:last-child {
+	background-color: pink;
+} */
+
+article:nth-child(even) {
+	background-color: pink;
+}
+
+article div {
+	position: relative;
+	padding-bottom: 3em;
+}
+
+article div h3 {
+	position: absolute;
+    font-size: 2em;
+    bottom: 0;
+}
+
+h1 {
+	background-color: brown;
+    width: 6em;
+    height: 4em;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    padding-top: 2em;
+    font-size: 1em;
+}
+
+nav {
+	border-bottom: 1px solid brown;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    padding: 0.5em 0;
+}
+
+aside {
+	display: none;
+}
+
+main section:first-child {
+	background-image: url(fondo.jpg);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media all and (min-width: 500px) { 
+
+	header {
+		padding-top: 3em;
+		overflow: hidden;
+		padding-bottom: 0;
+	}
+
+	nav {
+		float: left;
+    	position: inherit;
+    	width: 65%;
+    	padding: 0;
+	}
+
+	h1 {
+		margin: 0;
+	    width: 35%;
+	    height: auto;
+	    padding: 1em;
+	    float: left;
+	    box-sizing: border-box;
+	}
+
+	section:last-child {
+		overflow: hidden;
+	}
+
+	article {
+		float: left;
+    	width: 33.33333%;
+    	box-sizing: content-box;
+	}
+	
+}
+
+@media all and (min-width: 1000px) { 
+
+	body div {
+		overflow: hidden;
+		position: relative;
+	}
+
+	main {
+		float: right;
+    	width: 70%;
+    	box-sizing: border-box;
+	}
+
+	header {
+		float: left;
+		width: 30%;
+		position: absolute;
+    	top: 0;
+    	bottom: 0;
+	}
+
+	h1 {
+		width: 50%;
+    	margin: 0 25%;
+    	float: none;
+	}
+
+	nav {
+		position: relative;
+    	width: 80%;
+    	margin: 0 10%;
+    	font-size: 1.3em;
+    	margin-top: 1em;
+    	float: none;
+    }
+
+	aside {
+		width: 80%;
+    	margin: 0 10%;
+    	position: relative;
+    	display: block;
+	}
+
+	aside section:first-child {
+		background-color: blue;
+	}
+	aside section:last-child {
+		background-color: green;
+	}
+
+	/* Revisar
+	main section article:first-child {
+		float: right;
+	}
+	*/
+
+	article:nth-child(2), article:nth-child(3) {
+		float: right;
+	}
+
+}
