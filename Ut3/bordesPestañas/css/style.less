@@ -1,0 +1,72 @@
+@peq: 0.625em;
+@grande: 1.875em;
+
+@bgColor: olivedrab;
+
+header {
+	border-radius: @peq;
+	padding: @peq;
+	overflow: hidden;
+	background-color: @bgColor;
+}
+
+h1 {
+    float: left;
+    margin: 0;
+    font-size: 1.3em;
+}
+
+form {
+    float: right;
+}
+
+input {
+	border-radius: @peq 0em 0em @peq;
+	padding: 0.5em;
+    border: none;
+    float: left;
+}
+
+button {
+	border-radius: 0 @peq @peq 0;
+	padding: 0.5em 1em 0.5em 0.5em;
+    border: none;
+}
+
+ul {
+	padding: 0;
+	margin-bottom: 0;
+}
+
+li {
+	display: inline;
+    background-color: @bgColor;
+    padding: 0.5em;
+    border-radius: 1em 1em 0em 0;
+}
+
+li a:link {
+	text-decoration: none;
+	color: white;
+}
+
+main {
+	background-color: @bgColor;
+	padding: 1em;
+	border-radius: 0 @grande @grande @grande;
+}
+
+li a:link:target {
+	background-color: pink;
+	color: white;
+}
+
+li a:visited:target {
+	background-color: pink;
+	color: white;
+}
+
+article:target{
+	background-color: pink;
+	color: white;
+}

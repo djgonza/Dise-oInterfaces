@@ -1,0 +1,26 @@
+body, html {
+	height: 100%;
+}
+header {
+	background: url(../img/universo.jpg);
+	height: 50%;
+	background-size: cover;
+	color: #fff;
+}
+
+h1 {
+	text-align: center;
+    padding-top: 6%;
+    font-size: 3em;
+    margin: 0 auto;
+    width: 100%;
+    position: fixed;
+}
+
+h2 {
+	width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 21%;
+    font-size: 2em;
+}

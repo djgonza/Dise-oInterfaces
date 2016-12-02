@@ -1,0 +1,22 @@
+div {
+	height: 300px;
+	width: 500px;
+	border-radius: 1em;
+}
+
+div:nth-of-type(1) {
+	background: url(../img/ribbon.png) no-repeat bottom right, url(../img/old_paper.jpg) center bottom no-repeat;
+}
+
+div:nth-of-type(2) {
+	background: url(../img/ufo.png) center no-repeat, url(../img/stars.png) top left, url(../img/sky.png);
+	width: 80%;
+	margin: 0 auto;
+	background-size: contain;
+	color: #fff;
+	text-align: left !important;
+}
+
+h1 {
+	text-align: right;
+}
