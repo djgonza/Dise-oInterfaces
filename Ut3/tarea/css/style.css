@@ -1,11 +1,13 @@
 html, body {
 	width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-section {
-	background-color: #ccc;
-	width: 50%;
-	float: left;
+section{
+    flex-basis: 40%;
+    padding: 2em;
 }
 
 .cuadrado {
@@ -112,6 +114,7 @@ section {
     animation-name: corazon;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    margin: 5em;
 }
  
 .corazon::before, .corazon::after {

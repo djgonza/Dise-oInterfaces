@@ -1,11 +1,37 @@
 ul {
-	text-align: center;
+	text-align: left;
+	background-color: #eeeeee;
 }
 
 li {
 	display: inline-block;
+	padding-left: 2em;
+	background-image: url("../img/arrow-sprite.gif");
+	background-repeat: no-repeat;
+	background-position: 0 -158px;
+	position: relative;
 }
 
-ul > li > ul > li {
+ul li ul {
+	display: none;
+	margin: 0;
+    padding: 0;
+    width: 7em;
+}
+
+ul li:hover {
+	background-position: 0 0;
+}
+
+ul li:hover ul{
 	display: block;
+	position: absolute;
+}
+
+ul li ul li {
+	display: block;
+	background-position: 0 -80px;
+	background-color: #eeeeee !important;
+	margin: 0.5em 0;
+	padding-bottom: 0.3em;
 }
