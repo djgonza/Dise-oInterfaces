@@ -1,0 +1,73 @@
+
+div>div {
+	height: 5em;
+    width: 10em;
+    background-color: #ccc;
+    margin: 3em;
+    float: left;
+    position: relative;
+}
+
+span {
+	position: absolute;
+    top: 40%;
+    left: 40%;
+    height: 10%;
+    width: 10%;
+    text-align: center;
+}
+
+.sombra(@uno; @dos; @tres; @cuatro){
+	-webkit-box-shadow: @uno @dos @tres @cuatro rgba(0,0,0,0.75);
+	-moz-box-shadow: @uno @dos @tres @cuatro rgba(0,0,0,0.75)0;
+	box-shadow: @uno @dos @tres @cuatro rgba(0,0,0,0.75);
+}
+
+body>div>div:nth-child(1) {
+	.sombra(-0.5em; -0.5em; 0; 0);
+}
+
+body>div>div:nth-child(2){
+	.sombra(-0.5em; -0.5em; 1em; 0);
+}
+
+body>div>div:nth-child(3){
+	.sombra(-0.3em; -0.3em; 0; 0.3em);
+}
+
+body>div>div:nth-child(4){
+	.sombra(-0.7em; -0.7em; 1.5em; 0.3em);
+}
+
+body>div>div:nth-child(5){
+	.sombra(-0.02em; -0.02em; 1em; 0.1em);
+}
+
+body>div>div:nth-child(6){
+	.sombra(-0.02em; -0.02em; 0.5em; 0.2em);
+}
+
+body>div:nth-child(2)>div:nth-child(1) {
+	.sombra(0.5em; 0.5em; 0; 0);
+}
+
+body>div:nth-child(2)>div:nth-child(2) {
+	.sombra(0.5em; 0.5em; 1em; 0);
+}
+
+body>div:nth-child(2)>div:nth-child(3) {
+	.sombra(0.3em; 0.3em; 0; 0.3em);
+	
+}
+
+body>div:nth-child(2)>div:nth-child(4) {
+	.sombra(0.7em; 0.7em; 1.5em; 0.3em);
+}
+
+body>div:nth-child(2)>div:nth-child(5) {
+	.sombra(0.02em; 0.02em; 1em; 0.1em);
+}
+
+body>div:nth-child(2)>div:nth-child(6) {
+	.sombra(0.02em; 0.02em; 0.5em; 0.2em);
+}

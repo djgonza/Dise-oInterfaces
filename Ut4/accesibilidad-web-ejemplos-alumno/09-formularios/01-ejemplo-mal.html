@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Formularios - Ejemplo mal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+	<h1>Formularios - Ejemplo mal</h1>
+
+	<form name="Formulario" method="post" action="#">
+
+		<fieldset>
+
+			<legend>Informacion Personal</legend>
+
+			<label for="Nombre" tabindex="1">Nombre:</label>
+			<input type="text" id="Nombre" required  /><br/>
+
+			<label for="CorreoElectronico" tabindex="3">Correo ELectrónico:</label>
+			<input type="email" id="CorreoElectronico" required /><br/>
+
+			<label for="PaginaPersonal" tabindex="2">Página personal:</label>
+			<input type="url" id="PaginaPersonal" placeholder="URL de tu página web personal"  /><br/>
+
+		</fieldset>
+		
+		<fieldset>
+
+			<legend>Otra Informacion</legend>
+
+			<label for="Fecha">Fecha:</label>
+			<input type="date" id="Fecha" /><br/>
+
+			<label for="Mes">Mes:</label>
+			<input type="month" id="Mes" /><br/>
+
+			<label for="Semana">Semana:</label>
+			<input type="week" id="Semana" /><br/>
+
+			<label for="Tiempo">Tiempo:</label>
+			<input type="time" id="Tiempo" /><br/>
+
+			<label for="Fechatiempo">Fecha y tiempo:</label>
+			<input type="time" id="Fechatiempo" /><br/>
+
+			<label for="Numero">Número (min -10, max 10):</label>
+			<input type="number" min="-10" max="10" value="0" id="Numero" /><br/>
+
+			<label for="Intervalo">Intervalo (min 0, max 10):</label>
+			<input type="range" id="Intervalo" /><br/>
+
+			<label for="Telefono">Teléfono:</label>
+			<input type="tel" id="Telefono" /><br/>
+
+			<label for="Busqueda">Búsqueda:</label>
+			<input type="search" id="Busqueda" /><br/>
+
+			<label for="ColorFavorito">Color Favorito:</label>
+			<input type="color" id="ColorFavorito" /><br/>
+
+		</fieldset>
+		<fieldset>
+
+			<legend>Controles</legend>
+
+			<input type="reset" value="Borrar" />
+			<input type="submit" value="Enviar" />
+
+		</fieldset>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+body>div {
+	width: 20%;
+	margin: 10% 2%;
+	float: left;
+	border: dotted 2px;
+}
+
+body>div>div {
+	width: 80%;
+	height: 100px;
+	background-color: #ccc;
+	margin: 2em 10%;
+}
+
+#ex01 div:last-of-type {
+    transform: translate(2em);
+}
+
+#ex02 div:last-of-type {
+    transform: scale(0.5);
+}
+
+#ex03 {
+	transform: rotate(20deg);
+}
+
+#ex03 div:last-of-type {
+    transform: rotate(69deg);
+}
+
+#ex04 div:last-of-type {
+    transform: skewX(-20deg);
+}

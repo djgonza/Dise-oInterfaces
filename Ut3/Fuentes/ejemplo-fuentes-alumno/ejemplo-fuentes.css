@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('fonts/fontawesome-webfont.eot') format('embedded-opentype'), url('fonts/fontawesome-webfont.woff') format('woff'), url('fonts/fontawesome-webfont.ttf') format('truetype'), url('fonts/fontawesome-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+p {
+  font-family: 'FontAwesome', sans-serif;
+  font-size: 200%;
+}
+button,
+input,
+a {
+  padding: 1em 1em 1em 0.5em;
+  border-radius: 5px;
+}
+a {
+  border-radius: 5px;
+  background-color: #F0CFCF;
+  text-decoration: none;
+  padding-left: .5em;
+  font-size: 1.5em;
+}
+a.pinte:before {
+  font-family: "FontAwesome", sans-serif;
+  content: "\f0d2";
+}
+a > span {
+  position: absolute;
+  top: -322222px;
+}
+a.face:before {
+  font-family: "FontAwesome", sans-serif;
+  content: "\f230";
+}
+button:before {
+  font-family: "FontAwesome", sans-serif;
+  content: "\f1d8";
+}
+input {
+  font-family: "FontAwesome", sans-serif;
+  color: green;
+}
+input::-webkit-input-placeholder {
+  font-size: 1.5em;
+  color: red;
+}
+input::-moz-placeholder {
+  color: red;
+}
+/* firefox 19+ */
+input:-ms-input-placeholder {
+  color: #f00;
+}
+/* ie */
+input:-moz-placeholder {
+  color: #f00;
+}
+.icono:before {
+  font-family: "FontAwesome", sans-serif;
+  content: attr(data-icon);
+}

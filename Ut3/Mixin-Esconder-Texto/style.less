@@ -1,0 +1,76 @@
+
+//color
+@baseColor: red;
+@borderColor: lighten(@baseColor, 10%);
+@boxColor: spin(@baseColor, 180);
+@ancho: 37.5em;
+
+//mixin
+.rectangulo (@w) {
+	height: 10em;
+	width: @w;
+	border: 0.7em solid @borderColor;
+	background-color: @baseColor;
+	box-sizing: border-box;
+}
+
+.esconderTexto () {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.ancho (@maxW) {
+	margin-left: @maxW;
+	margin-right: @maxW;
+}
+
+//class
+.contenedor-squares {
+	background-color: @boxColor;
+	overflow: auto;
+}
+
+.square1 {
+	.rectangulo(70%);
+	.esconderTexto ();
+	float: left;
+}
+
+.square2 {
+	.rectangulo(28%);
+	float: right;
+}
+
+@media all and (min-width: 700px){
+
+	.contenedor-squares {
+		max-width: 600px;
+		.ancho(auto);
+	}
+
+	.square1 {
+		.rectangulo(200px);
+	}
+	.square2 {
+		.rectangulo(200px);
+	}
+
+	p {
+		max-width: 600px;
+		.ancho(auto);
+	}
+
+}
+
+@media all and (min-width: 1000px){
+
+	.square1 {
+		white-space: inherit;
+	}
+
+	p {
+		max-width: 100%;
+	}
+
+}

@@ -1,0 +1,28 @@
+@textsize: 1.8em;
+@colorheader: grey;
+@colorp: red;
+@links: green;
+
+
+// hazlo de forma anidada
+header {
+	font-size: 30px;
+
+	h1 {
+		color: @colorheader;
+	}
+	p {
+		color: @colorp;
+
+		a {
+			text-decoration: none;
+
+			&:hover {
+				color: @links;
+			}
+		}
+	}
+	
+}
+
+

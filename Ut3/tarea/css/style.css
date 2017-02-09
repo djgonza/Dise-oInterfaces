@@ -193,9 +193,59 @@ section{
 }
 
 
+.animation {
+    padding-left: 54px;
+    clear: both;
+    width: 100%;
+    min-height: 70px;
+    position: relative;
+}
 
+.animation::before {
+    content: "";
+    background-image: url(../imgs/sprites.png);
+    width: 50px;
+    height: 70px;
+    position: absolute;
+    background-position-x: -2px;
+    background-position-y: -168px;
+    left: 0;
+    animation-name: goku;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
 
+@keyframes goku {
+    0% {
+        background-position-x: -2px;
+        background-position-y: -168px;
+    }
 
+    16% {
+        background-position-x: -55px;
+        background-position-y: -168px;
+    }
+    32%{
+        background-position-x: -96px;
+        background-position-y: -168px;
+    }
+    48%{
+        background-position-x: -147px;
+        background-position-y: -168px;
+    }
+    64%{
+        background-position-x: -197px;
+        background-position-y: -168px;
+    }
+    80%{
+        background-position-x: -350px;
+        background-position-y: -168px;
+    }
+    100%{
+        background-position-x: -2px;
+        background-position-y: -168px;
+    }
+}
 
 
 

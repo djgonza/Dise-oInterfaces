@@ -1,0 +1,27 @@
+.radio (@radio: 1em) {
+	border-radius: @radio;
+}
+
+body {
+	background-color: lighten(blue, 30%);
+	padding: 0 15em;
+}
+
+header {
+	.radio();
+	background-color: red;
+	height: 50px;
+}
+
+main {
+	.radio(2em);
+	background-color: #fff;
+	height: 300px;
+	margin: 0.5em 0;
+}
+
+footer {
+	.radio();
+	background-color: blue;
+	height: 50px;
+}

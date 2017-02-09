@@ -1,0 +1,52 @@
+div > div {
+  height: 5em;
+  width: 10em;
+  background-color: #ccc;
+  margin: 3em;
+  float: left;
+  position: relative;
+}
+span {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  height: 10%;
+  width: 10%;
+  text-align: center;
+}
+body > div > div:nth-child(1) {
+  box-shadow: -0.5em -0.5em 0 0 rgba(0, 0, 0, 0.75);
+}
+body > div > div:nth-child(2) {
+  box-shadow: -0.5em -0.5em 1em 0 rgba(0, 0, 0, 0.75);
+}
+body > div > div:nth-child(3) {
+  box-shadow: -0.3em -0.3em 0 0.3em rgba(0, 0, 0, 0.75);
+}
+body > div > div:nth-child(4) {
+  box-shadow: -0.7em -0.7em 1.5em 0.3em rgba(0, 0, 0, 0.75);
+}
+body > div > div:nth-child(5) {
+  box-shadow: -0.02em -0.02em 1em 0.1em rgba(0, 0, 0, 0.75);
+}
+body > div > div:nth-child(6) {
+  box-shadow: -0.02em -0.02em 0.5em 0.2em rgba(0, 0, 0, 0.75);
+}
+body > div:nth-child(2) > div:nth-child(1) {
+  box-shadow: 0.5em 0.5em 0 0 rgba(0, 0, 0, 0.75);
+}
+body > div:nth-child(2) > div:nth-child(2) {
+  box-shadow: 0.5em 0.5em 1em 0 rgba(0, 0, 0, 0.75);
+}
+body > div:nth-child(2) > div:nth-child(3) {
+  box-shadow: 0.3em 0.3em 0 0.3em rgba(0, 0, 0, 0.75);
+}
+body > div:nth-child(2) > div:nth-child(4) {
+  box-shadow: 0.7em 0.7em 1.5em 0.3em rgba(0, 0, 0, 0.75);
+}
+body > div:nth-child(2) > div:nth-child(5) {
+  box-shadow: 0.02em 0.02em 1em 0.1em rgba(0, 0, 0, 0.75);
+}
+body > div:nth-child(2) > div:nth-child(6) {
+  box-shadow: 0.02em 0.02em 0.5em 0.2em rgba(0, 0, 0, 0.75);
+}

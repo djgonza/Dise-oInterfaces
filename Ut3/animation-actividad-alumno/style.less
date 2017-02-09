@@ -1,0 +1,75 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background: url(tree.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.snowflake {
+	position: absolute;
+	color: white;
+	animation-name: copouno;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.copo (@time, @delay) {
+    animation-duration: @time;
+    animation-delay: @delay;
+}
+
+.f1 {
+    .copo (3s, 1s);
+}
+.f2 {
+    .copo (5s, 2s);
+}
+.f3 {
+    .copo (7s, 3s);
+}
+.f4 {
+    .copo (3s, 2s);
+}
+.f5 {
+    .copo (5s, 8s);
+}
+.f6 {
+    .copo (6s, 4s);
+}
+.f7 {
+    .copo (4s, 3s);
+}
+.f8 {
+    .copo (6s, 6s);
+}
+
+@keyframes copouno {
+ 
+    from {
+        left: 0%;
+    	top: 0%;
+    }
+    25% {
+		left: 50%;
+    }
+    50% {
+		left: 80%;
+    }
+    75%{
+		left: 30%;
+    }
+    to {
+    	top: 95%;
+    	color: rgba(0,0,0,0);
+    }
+
+}
+
+
+
