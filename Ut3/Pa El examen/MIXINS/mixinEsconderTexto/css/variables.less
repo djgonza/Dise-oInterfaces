@@ -1,0 +1,79 @@
+//Variables
+@baseColor: red;
+@bordeColor: lighten(@baseColor, 10%);
+@boxColor: spin(@baseColor, 180);
+@ancho: 37.5em;
+
+//Mixins
+.rectangulo(@anchura){
+	height: 10em;
+	width: @anchura;
+	background-color: @baseColor;
+	border: 0.5em @bordeColor solid;
+	box-sizing: border-box;
+
+}
+
+.esconder(){
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.ancho(@maxAncho){
+	margin-right: @maxAncho;
+	margin-left: @maxAncho;
+}
+
+.contenedor-squares{
+	background-color: @boxColor;
+	overflow: auto;
+}
+.square1{
+	.rectangulo(70%);
+	float: left;
+	.esconder();
+	color:white;
+}
+
+.square2{
+	.rectangulo(28%);
+	float: right;
+}
+//Layaout
+@media all and (min-width:800px){
+	.square1{
+		.rectangulo(200px);
+	}
+	.square2{
+		.rectangulo(200px);
+	}
+
+	.contenedor-squares{
+		.ancho(auto);
+		max-width: 600px;
+	}
+	p{
+		max-width: 600px;
+		.ancho(auto);	
+	}
+}
+
+@media all and (min-width:1000px){
+	.square1{
+		white-space: inherit;
+	}
+	p{
+		
+		max-width:100%;	
+	}
+}
+
+
+
+
+
+
+
+
+

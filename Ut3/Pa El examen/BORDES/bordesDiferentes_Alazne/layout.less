@@ -1,0 +1,50 @@
+div{
+	background: @fondo;
+	width: @ancho;
+	height: @alto;
+	color: white;
+	margin: @pequeno;
+	display: inline-block;
+	position: relative;
+}
+.examplelabelborderradius{
+	position: absolute;
+	top: @pequeno/1.5;
+	left: @mediano/1.1;
+	font-size: @mediano;
+}
+div:nth-child(7) .examplelabelborderradius{
+	left: @pequeno/1.5;
+}
+div:nth-child(1){
+	border-bottom-right-radius: @grande*1.5 @mediano;
+}
+div:nth-child(2){
+	border-radius: @mediano 0 @mediano 0;
+}
+div:nth-child(3){
+	border-radius: @grande 0 0 @grande;
+}
+div:nth-child(4){
+	border-top-left-radius: @grande*2 @pequeno;
+	border-top-right-radius: @grande*2 @pequeno;
+	border-bottom-left-radius: @grande*2 @pequeno;
+	border-bottom-right-radius: @grande*2 @pequeno;
+}
+div:nth-child(5){
+	border-top-right-radius: @grande*8 @grande*2;
+	border-bottom-right-radius: @grande*8 @grande*2;
+}
+div:nth-child(6){
+	border-top-left-radius: @grande*4 @grande*2;
+	border-top-right-radius: @grande*4 @grande*2;
+	border-bottom-left-radius: @grande*4 @grande*2;
+	border-bottom-right-radius: @grande*4 @grande*2;
+}
+div:nth-child(7){
+	width: @alto;
+	border-top-left-radius: @grande @grande;
+	border-top-right-radius: @grande @grande;
+	border-bottom-left-radius: @grande @grande;
+	border-bottom-right-radius: @grande @grande;
+}

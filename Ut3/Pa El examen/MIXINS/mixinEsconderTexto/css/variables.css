@@ -1,0 +1,58 @@
+.contenedor-squares {
+  background-color: #00ffff;
+  overflow: auto;
+}
+.square1 {
+  height: 10em;
+  width: 70%;
+  background-color: red;
+  border: 0.5em #ff3333 solid;
+  box-sizing: border-box;
+  float: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: white;
+}
+.square2 {
+  height: 10em;
+  width: 28%;
+  background-color: red;
+  border: 0.5em #ff3333 solid;
+  box-sizing: border-box;
+  float: right;
+}
+@media all and (min-width: 800px) {
+  .square1 {
+    height: 10em;
+    width: 200px;
+    background-color: red;
+    border: 0.5em #ff3333 solid;
+    box-sizing: border-box;
+  }
+  .square2 {
+    height: 10em;
+    width: 200px;
+    background-color: red;
+    border: 0.5em #ff3333 solid;
+    box-sizing: border-box;
+  }
+  .contenedor-squares {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 600px;
+  }
+  p {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+@media all and (min-width: 1000px) {
+  .square1 {
+    white-space: inherit;
+  }
+  p {
+    max-width: 100%;
+  }
+}

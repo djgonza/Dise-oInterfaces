@@ -1,0 +1,99 @@
+
+.contenedor, section{
+	width: 95%;
+	margin:auto;
+	margin-bottom: 4em;
+}
+
+.contenedor p {
+	margin-bottom:40px;
+}
+
+
+header nav {
+	background:#ce2dce;
+	margin-bottom:10px;
+}
+
+header nav ul {
+	list-style: none;
+	overflow: hidden;
+}
+
+header nav ul li {
+	float: left;
+	font-family: sans-serif;
+}
+
+header nav ul li a {
+	display: block;
+	padding:20px;
+	color:#fff;
+	text-decoration: none;
+}
+
+header nav ul li a:hover {
+	background:#f0b0f0;
+	color:grey;
+}
+
+section>p{
+	margin-bottom: 4em;
+	float: left;
+	width: 90%;
+}
+sidebar{
+	position: relative;
+}
+.menuDos{
+
+	float: right;
+	margin-right: 3%;
+	background-color:#eeaa44;
+
+
+
+}
+.menuDos ul{
+	list-style: none;
+	padding: 1.8em 0.8em;
+
+
+}
+.menuDos li{
+
+margin-bottom: 3em;
+}
+.menuDos ul li a{
+	text-decoration: none;
+	color:#464545;
+	font-family: sans-serif;
+	padding: 0.2em 0.5em;
+
+}
+.menuDos  ul li a:hover {
+	background:#5fa28e;
+
+	color:white;
+}
+
+
+/* --- Clase que agregaremos cuando el usuario haga scroll --- */
+.menu-fixed {
+	position:fixed;
+	z-index:1000;
+	top:0;
+	//max-width:1000px;
+	width:94%;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+.menuDos-fixed {
+	position:fixed;
+	z-index:1000;
+	top:8em;
+	right: 0.2em;
+	//max-width:1000px;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+
+
+}

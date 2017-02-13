@@ -1,0 +1,76 @@
+html{
+  height: 100%;
+}
+
+body {
+  position: relative;
+  background: url("tree.jpg") no-repeat ;
+  width: 483px;
+  height: 100%;
+
+
+}
+#container>div{
+  display: inline-block;
+
+
+
+}
+.snowflake {
+  position: absolute ;
+  color:white;
+  height: 100%;
+  font-size: 1.2em;
+
+
+}
+@keyframes copo{
+  0%{
+
+    top:-1%;
+
+
+  }
+  50%{
+    color:rgba(255,255,255,1);
+  }
+  100%{
+    top:50%;
+    color:rgba(0,0,0,0);
+  }
+
+}
+
+.f1{
+
+  animation:copo 3s linear infinite;
+
+}
+.f2{
+  animation:copo 5s linear infinite;
+  left:15%;
+}
+.f3{
+  animation:copo 7s linear infinite;
+  left:30%;
+}
+.f4{
+  animation:copo 5s linear infinite;
+  left:45%;
+}
+.f5{
+  animation:copo 3s linear infinite;
+  left:58%;
+}
+.f6{
+  animation:copo 5s linear infinite;
+  left:67%;
+}
+.f7{
+  animation:copo 6s linear infinite;
+  left:72%;
+}
+.f8{
+  animation:copo 4s linear infinite;
+  left:90%;
+}

@@ -1,0 +1,30 @@
+.mixin(@param:1em){
+	border-radius:@param;
+	
+}
+body{
+
+	background-color: lighten(blue, 30%);
+	margin: 0 auto;
+	width: 70%;
+}
+
+header{
+	.mixin();
+	background-color: red;
+	height: 3em;
+
+}
+main{
+
+	.mixin(@param:2em);
+	height: 15em;
+	background-color: white;
+	margin: 0.5em 0 0.5em 0;
+
+}
+footer{
+	.mixin();
+	background-color: blue;
+	height: 2em;
+}

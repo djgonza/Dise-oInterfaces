@@ -1,0 +1,57 @@
+div {
+  background: white;
+  padding: @pequeno;
+  display: inline-block;
+  position: relative;
+  border: @pequeno solid black;
+}
+form {
+    float: right;
+    margin-top: 1.5em;
+}
+input{
+    border-radius: @pequeno 0 0 @pequeno;
+
+}
+h1{
+  float:left;
+}
+button{
+  border-radius: 0 @pequeno @pequeno 0;
+}
+header{
+  background-color:@fondo;
+  border-radius: @grande;
+  padding: @pequeno;
+  overflow: hidden;
+}
+nav{
+    width: 60%;
+  }
+
+li{
+    background: #009900;
+    padding: @pequeno;
+    display: inline-block;
+    border-radius:@pequeno @pequeno 0 0 ;
+}
+main{
+  background-color:@fondo;
+  padding: @pequeno;
+  border-radius: 0 @grande @grande @grande;
+}
+li :hover{
+    background-color: @fondoSeleccion;
+    color:@letraSeleccion;
+}
+
+ul{
+
+  padding-left: 0;
+  margin-bottom: -0.02em;
+}
+article:target{
+
+  background-color: @fondoSeleccion;
+  color:@letraSeleccion;
+}

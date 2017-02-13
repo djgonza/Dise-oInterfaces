@@ -1,0 +1,42 @@
+h1 {
+  text-align: right;
+}
+div {
+  width: 6.25em;
+  height: 6.25em;
+  background-color: red;
+  position: absolute;
+  left: 1.25em;
+}
+div:nth-of-type(1) {
+  top: 1.25em;
+  transition: background-color 3s;
+}
+div:nth-of-type(1):hover {
+  background-color: #a7e4df;
+}
+div:nth-of-type(2) {
+  top: 9em;
+  transition: transform 3s;
+}
+div:nth-of-type(2):hover{
+  transform: translate(12em);
+}
+div:nth-of-type(3) {
+  top: 16.25em;
+  transition: background-color, transform 3s;
+}
+div:nth-of-type(3):hover{
+  background-color: #a7e4df;
+  transform: scale(1.5) translate(12em);
+}
+div:nth-of-type(4) {
+  top: 23em;
+  transform: padding, background-color, text-align 3s;
+}
+div:nth-of-type(4):hover{
+  background-color: #a7e4df;
+  padding: 3em;
+  text-align: center;
+}
+

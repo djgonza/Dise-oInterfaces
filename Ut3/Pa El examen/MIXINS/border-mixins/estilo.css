@@ -1,0 +1,21 @@
+body {
+  background-color: #9999ff;
+  margin: 0 auto;
+  width: 70%;
+}
+header {
+  border-radius: 1em;
+  background-color: red;
+  height: 3em;
+}
+main {
+  border-radius: 2em;
+  height: 15em;
+  background-color: white;
+  margin: 0.5em 0 0.5em 0;
+}
+footer {
+  border-radius: 1em;
+  background-color: blue;
+  height: 2em;
+}

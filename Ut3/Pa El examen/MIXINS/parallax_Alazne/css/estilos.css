@@ -1,0 +1,27 @@
+header{
+	background: url(../img/universo.jpg) no-repeat fixed center;
+	height: 30em;
+	background-size: cover; 
+}
+h1{
+	position: fixed;
+	top: auto;
+	left: 45%;
+	margin: 0;
+	padding-top: 1.5em; 
+	color:white;
+	font-size: 4em;
+	text-align: center;
+}
+h2{
+	padding-top: 5em;
+	margin: 0 auto;
+	width: 50%;
+	color:white;
+	font-size: 3em;
+	text-align: center;
+}
+p{
+	padding: 0 10em 0 10em;
+	line-height: 2em;
+}
