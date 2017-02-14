@@ -1,0 +1,101 @@
+header {
+  font-size: 5em;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+  text-shadow: 0em 0em 0.01em blue, 3px 6px 42px blue;
+}
+h1 {
+  font-size: 2em;
+  font-family: 'Glyphicons Halflings';
+}
+h1:before {
+  content: "\270f";
+}
+main {
+  color: blue;
+}
+nav,
+main {
+  position: relative;
+  top: 1em;
+}
+nav a {
+  padding: .5em;
+  text-decoration: none;
+  color: blue;
+  border-bottom: 1px solid blue;
+}
+nav a:hover {
+  animation-duration: 5s;
+  animation-name: animation-menu;
+}
+article {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  top: 1em;
+}
+article p {
+  padding: 1em 0 1em 1em;
+  width: 80%;
+  margin: .5em auto;
+  background: -webkit-linear-gradient(left, blue 0%, white 100%);
+  background: -o-linear-gradient(left, blue 0%, white 100%);
+  transform: skewX(-20deg);
+  color: white;
+}
+article p:before {
+  content: " ";
+  background-image: url(../sprite.png);
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: -41px;
+  background-position-y: -3em;
+}
+article p:hover {
+  animation-duration: 1s;
+  animation-name: animation-rotate;
+  animation-fill-mode: forwards;
+}
+div {
+  background-image: url(../cielo-estrellado.jpeg);
+  position: relative;
+  top: 1em;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-name: animation-rotate-div;
+  height: 5em;
+  width: 5em;
+  border-radius: 5em;
+}
+@keyframes animation-rotate-div {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes animation-rotate {
+  from {
+    transform: rotate(0deg);
+    color: white;
+    width: 100%;
+  }
+  to {
+    transform: rotate(180deg);
+    color: blue;
+    width: 150%;
+  }
+}
+@keyframes animation-menu {
+  from {
+    border-bottom: 1px solid blue;
+  }
+  to {
+    border-bottom: 1em solid blue;
+  }
+}

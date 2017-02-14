@@ -31,7 +31,7 @@ function getReceta (url) {
 		/* Titulo */
 		$("<h1>").html(title).appendTo(article);
 		/* Imagen */
-		$("<img>").attr('src', 'img.split("/")[7]').attr('alt', title).appendTo(article);
+		$("<img>").attr('src', img.split("/")[7]).attr('alt', title).appendTo(article);
 		/* Ingedientes */
 		$("<div>").html(ingredientes).appendTo(article);
 		/* Preparacion */
@@ -39,12 +39,12 @@ function getReceta (url) {
 		/* Append */
 		article.appendTo($("body"));
 		/* Descargar Imagen */
-		var a = $("<a>")
+		/*var a = $("<a>")
 		    .attr("href", img)
 		    .attr("download", "img.png")
 		    .appendTo("body");
 			a[0].click();
-			a.remove();
+			a.remove();*/
 
 	});
 
