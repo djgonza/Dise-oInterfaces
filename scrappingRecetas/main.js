@@ -39,12 +39,12 @@ function getReceta (url) {
 		/* Append */
 		article.appendTo($("body"));
 		/* Descargar Imagen */
-		/*var a = $("<a>")
+		var a = $("<a>")
 		    .attr("href", img)
 		    .attr("download", "img.png")
 		    .appendTo("body");
 			a[0].click();
-			a.remove();*/
+			a.remove();
 
 	});
 
