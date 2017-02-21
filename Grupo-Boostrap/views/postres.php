@@ -2,7 +2,7 @@
 
 	<?php
 
-	/*$dir = "views/recetas/postres/";
+	/*$dir = "views/postres/";
 
 	if (is_dir($dir)){
 

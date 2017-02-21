@@ -1,0 +1,20 @@
+<article>
+	<h1>Gofres veganos con chocolate y pistachos</h1>
+	<img src="imgs/gofres_veganos_chocolate_pistacho.jpg" alt="Gofres veganos con chocolate y pistachos">
+	<div>
+		<ul>
+			<li>120 g de harina</li>
+			<li>2 cucharaditas de no egg&nbsp;(lo podéis encontrar en tiendas especializadas, herboriterías y diversas tiendas online)</li>
+			<li>200 ml de leche vegetal (yo usé de soja)</li>
+			<li>50&nbsp;g de&nbsp;margarina vegetal</li>
+			<li>30&nbsp;g de azúcar (podéis sustituirla por otro endulzante que uséis)</li>
+			<li>5&nbsp;g de levadura en polvo</li>
+			<li>1/2 cucharadita de sal</li>
+			<li>100 gr de chocolate (aunque de lo golosos que seáis)</li>
+			<li>1 puñado de pistachos</li>
+		</ul>
+	</div>
+	<div>
+		<p>Primero prepararemos los ingredientes secos, mezclando la harina, la levadura, el azúcar y la sal. Después preparamos los ingredientes líquidos, mezclando la leche, la margarina vegetal derretida y el no egg. Recordad que cada cucharadita de no egg se mezcla con dos cucharadas soperas, se bate bien, y así podemos usarlo como si fuese el huevo en recetas no veganas. También podéis usar otros sustitutos (aquí tenéis algunos trucos de Gastronomía Vegana).</p><p>Una vez tenemos los ingredientes líquidos&nbsp;preparados, vamos añadiendo poco a poco a los secos removiendo bien y cuidando que no queden grumos.</p><p>Como os decía, yo he usado los moldes de lekué, que van al horno. Vienen para 8 gofres, pero esta receta es sólo para 4. Así que engrasamos uno de los moldes con un poco de aceite y vertemos la masa (que veréis que es bastante líquida) en él.</p><p>Metemos al horno, precalentado a 220ºC, durante unos 8 o 9 minutos. Los sacamos, desmoldamos y metemos pero ahora con el lado de cuadritos hacia arriba para que se doren, cuando veáis que ya tienen color retiramos.</p><p>Ya sólo queda derretir el chocolate con una cucharadita de agua y espolvorear los pistachos machacados por encima de los gofres.</p><p>¡Que aproveche!</p>
+	</div>
+</article>

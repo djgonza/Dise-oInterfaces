@@ -2,7 +2,7 @@
 
 	<?php
 
-	$dir = "views/recetas/segundos/";
+	$dir = "views/segundos/";
 
 	if (is_dir($dir)){
 

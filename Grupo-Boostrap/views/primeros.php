@@ -1,8 +1,8 @@
-<section id="contenido_principal">
+<section>
 
 	<?php
 
-	$dir = "views/recetas/primeros/";
+	$dir = "views/primeros/";
 
 	if (is_dir($dir)){
 
