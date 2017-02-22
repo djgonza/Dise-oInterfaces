@@ -2,24 +2,24 @@
 	<h1><a href="">Titulo</a></h1>
 	<nav class="row">
 		<h2>Titulo Del menu</h2>
-		<ul>
-			<li id="btn_primeros" class="row botones">
-				<a href="<?php echo PATH_BASE; ?>/primeros">
+		<ul class="nav">
+			<li class="nav-item h-verde">
+				<a class="h-blanco" href="/primeros">
 					Primeros
 				</a>
 			</li>
-			<li id="btn_segundos" class="row botones">
-				<a href="<?php echo PATH_BASE; ?>/segundos">
+			<li class="nav-item h-morado">
+				<a class="c-blanco" href="/segundos">
 					Segundos
 				</a>
 			</li>
-			<li id="btn_postres" class="row botones">
-				<a href="<?php echo PATH_BASE; ?>/postres">
+			<li class="nav-item h-rosa">
+				<a class="c-blanco" href="/postres">
 					Postres
 				</a>
 			</li>
-			<li id="btn_contacto" class="row botones">
-				<a href="<?php echo PATH_BASE; ?>/contacto">
+			<li class="nav-item h-naranja">
+				<a class="c-blanco" href="/contacto">
 					Contacto
 				</a>
 			</li>

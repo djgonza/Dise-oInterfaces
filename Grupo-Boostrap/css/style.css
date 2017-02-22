@@ -36,6 +36,9 @@ body {
 .bg-gris {
   background-color: #cfcfcf;
 }
+.bg-blanco {
+  background-color: white;
+}
 .c-verde {
   color: #88A825 !important;
 }
@@ -53,6 +56,51 @@ body {
 }
 .c-gris {
   color: #cfcfcf !important;
+}
+.c-blanco {
+  color: white !important;
+}
+.h-bg-verde:hover {
+  background-color: #88A825;
+}
+.h-bg-morado:hover {
+  background-color: #35203B;
+}
+.h-bg-rosa:hover {
+  background-color: #911146;
+}
+.h-bg-naranja:hover {
+  background-color: #CF4A30;
+}
+.h-bg-amarillo:hover {
+  background-color: #ED8C2B;
+}
+.h-bg-gris:hover {
+  background-color: #cfcfcf;
+}
+.h-bg-blanco:hover {
+  background-color: white;
+}
+.h-c-verde:hover {
+  color: #88A825 !important;
+}
+.h-c-morado:hover {
+  color: #35203B !important;
+}
+.h-c-rosa:hover {
+  color: #911146 !important;
+}
+.h-c-naranja:hover {
+  color: #CF4A30 !important;
+}
+.h-c-amarillo:hover {
+  color: #ED8C2B !important;
+}
+.h-c-gris:hover {
+  color: #cfcfcf !important;
+}
+.h-c-blanco:hover {
+  color: white !important;
 }
 .botones {
   text-align: center;
