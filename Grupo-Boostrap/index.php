@@ -1,32 +1,29 @@
 <?php 
 
-include "views/head.html"; 
+//var_dump($_SERVER);
+define ("ABSOLUTE_PATH", $_SERVER['REQUEST_SCHEME']."://".$_SERVER['SERVER_NAME']."/boostrap/");
+define ("BASE_PATH", "/boostrap/");
+//var_dump(ABSOLUTE_PATH);
+//var_dump("views/".split(BASE_PATH, $_SERVER["REQUEST_URI"])[1].".php");
+
+include "views/head.php"; 
 include "views/header.php";
 
-	if ($_SERVER["REQUEST_URI"] == "/"){
+	if ($_SERVER["REQUEST_URI"] == BASE_PATH){
+
 		include "views/inicio.php";
-		exit(); 
-	}
 
-	if (file_exists("views".$_SERVER["REQUEST_URI"].".php")) {
+	}else if (file_exists("views/".split(BASE_PATH, $_SERVER["REQUEST_URI"])[1].".php")) {
 
-		include "views".$_SERVER["REQUEST_URI"].".php";
-		exit();
+		include "views/".split(BASE_PATH, $_SERVER["REQUEST_URI"])[1].".php";
 
-	}
+	}else{
 
-	if (file_exists("views".$_SERVER["REQUEST_URI"].".html")) {
-
-		include "views".$_SERVER["REQUEST_URI"].".html";
-		exit();
+		include "views/404.php";
 
 	}
 
-	include "views/404.html";
-
-
-
-include "views/footer.html"; 
+include "views/footer.php"; 
 
 ?>
 

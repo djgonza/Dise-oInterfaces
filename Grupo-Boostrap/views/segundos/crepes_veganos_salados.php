@@ -1,0 +1,24 @@
+<article class="row">
+	<h3 class="c-naranja col-md-12">Crepes veganos salados de trigueros y setas portobello</h3>
+	<div class="col-md-6">
+	<img class="img-fluid" src="<?php echo ABSOLUTE_PATH; ?>imgs/CREPES-VEGANOS-SALADOS-740x493.jpg" alt="Crepes veganos salados de trigueros y setas portobello">
+	</div>
+		<section class="col-md-5">
+			<h4 class="c-naranja">Ingredientes</h4>
+		<ul>
+			<li>100 gr de harina integral</li>
+			<li>1 vaso de agua con gas</li>
+			<li>200 gr de setas portobello</li>
+			<li>200 gr de espárragos trigueros</li>
+			<li>1 cebolla pequeña</li>
+			<li>1 diente de ajo</li>
+			<li>2 cucharadas de salsa de soja</li>
+			<li>Aceite de oliva</li>
+			<li>Sal rosa del himalaya (es la que yo usé, pero podéis escoger de otro tipo)</li>
+		</ul>
+	</section>
+	<section class="text-justify">
+		<h4 class="c-naranja">Modo de Realización</h4>
+		<p>Primero limpiamos y cortamos las setas, los trigueros y la cebolla. Yo laminé las portobello, corté los trigueros en cachos del tamaño de la yema del dedo y las cebollas en cuadraditos pequeños.</p><p>Ponemos aceite de oliva en una sartén (hasta cubrir la base) y añadimos la cebolla junto con el diente de ajo y un par de minutos después los espárragos. Añadimos una pizca de sal y dejamos pochar a fuego medio-bajo unos 10 minutos.</p><p>Después añadimos las setas portobello y dejamos hacerse removiendo de vez en cuando otros 10 minutos. Por último añadimos dos cucharadas de salsa de soja y dejamos hacerse unos 5 minutos más.</p><p>Mientras, preparamos los crepes mezclando en un bol la harina con el agua con gas y una cucharada de aceite de oliva. Añadimos también una pizca de sal y mezclamos con unas varillas. Quedará una mezcla más bien ligera. Cuando más espeso nos quede, más gruesos quedarán luego los crepes y al revés.</p><p>Ponemos una sartén antiadherente al fuego con una gotita de aceite que esparciremos por toda la base con un pincel de silicona o con papel de cocina. Cuando esté caliente añadimos nuestra masa de crepes veganos. Yo usé como medida un cucharón casi lleno. Una vez volcamos la masa, movemos la sartén en círculos para que la masa se esparza por todas partes y así se cocine uniformemente. Cuando veamos que ya está bien cuajada, damos la vuelta y dejamos dorar un poco.</p><p>Ya solo queda rellenar nuestros crepes veganos salados con las setas y los trigueros que ya hemos preparado ¡y disfrutarlos!</p><p>¡Que aproveche!</p><p>&nbsp;</p>
+</section>
+</article>
